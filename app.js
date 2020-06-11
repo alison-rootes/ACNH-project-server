@@ -19,6 +19,16 @@ sequelize.sync()
 
 app.use("/user", user)
 
+app.use("/post", post)
+
+
+
+// app.get("/post", (req, res) => {
+//     database.find({}, (err, data) => {
+//     res.json(data);
+//     });
+// });
+
 app.get("/login", function(req, res){
     res.get('login page route')
 })
